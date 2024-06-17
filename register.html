@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Registro</title>
+    <link rel="stylesheet" href="styles-register.css">
+</head>
+<body>
+    <div id="register-container" class="register-container">
+        <h1>Tenku</h1>
+        <form id="register-form">
+            <h2>Registro</h2>
+            <input id="email" type="email" placeholder="Correo Electrónico" required>
+            <input id="password" type="password" placeholder="Contraseña" required>
+            <input id="confirm-password" type="password" placeholder="Confirmar Contraseña" required>
+            <button type="submit">Crear Cuenta</button>
+            <p id="error-message-step1"></p>
+            <a href="login.html" class="btn">Iniciar Sesión</a>
+        </form>
+    </div>
+    <div id="profile-setup-container" class="profile-setup-container">
+        <h1>Tenku</h1>
+        <form id="register-form-step2">
+            <h2>Configuración del Perfil</h2>
+            <input type="text" id="username" placeholder="Nombre de Usuario" required>
+            <input type="file" id="profile-picture" accept="image/*">
+            <button type="submit">Guardar Perfil</button>
+            <div id="error-message-step2" class="error-message"></div>
+        </form>
+    </div>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+<script src="js/register.js"></script>
+</body>
+</html>

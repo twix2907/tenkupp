@@ -1,0 +1,17 @@
+{
+    "name": "TENKU",
+    "short_name": "TENKU",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#2196F3",
+    "icons": [
+      {
+        "src": "image/logot.jpeg",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+
+    ]
+}
+  
